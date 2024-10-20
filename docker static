@@ -10,3 +10,14 @@
     <p>This is a simple static web application.</p>
 </body>
 </html>
+
+
+
+
+FROM nginx:alpine
+COPY ./ /usr/share/nginx/html
+EXPOSE 80
+
+
+docker build -t file name
+docker run -d -p 8081:80 file name
